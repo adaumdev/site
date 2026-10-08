@@ -101,7 +101,7 @@ h2 {
     object-fit: cover;
     border-radius: 10px;
     border: 4px solid #730FB1;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
 }
 
 #objetivos {
