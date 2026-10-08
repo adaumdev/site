@@ -16,7 +16,7 @@
         <ul class="nav-links">
             <li><a href="#inicio">Início</a></li>
             <li><a href="#objetivos">Objetivos</a></li>
-            <li><a href="#duvidas">Dúvidas</a></li>
+            <li><a href="#duvida">Dúvidas</a></li>
         </ul>
     </nav>
 </header>
@@ -41,7 +41,7 @@
         <ul>
             <li>
                 <img src="../static/imagens/usuario.png" alt="Usuario" class="usuario">
-                    <p>Respeitar as diferenças de cada usuário e esclarecerde forma simples e direta todos os
+                    <p>Respeitar as diferenças de cada usuário e esclarecer de forma simples e direta todos os
                         questionamentos.</p>
             </li>
             <li>
@@ -57,87 +57,106 @@
     </div>
     <br>
 
-    <h1 id="duvidas">AS DUVIDAS MAIS FREQUENTES:</h1>
-
-    <ol>
-        <li>
-            <label for="first">Me ligaram se passando por gerente do meu banco, mas nem tenho conta lá, fui
-                hackeado(a)?</label>
-            <input type="radio" id="first" name="duvida" checked>
-            <div>
-                <p>
-                    Não. A primeira coisa a se fazer em uma situação como essa é bloquear qualquer número suspeito de
-                    sua lista telefônica e por precaução mude a senha da sua conta para não dar brecha à golpes.
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="second">Não param de mandar várias mensagens no meu e-mail, como faço pra cancelar elas?</label>
-            <input type="radio" id="second" name="duvida" checked>
-            <div>
-                <p>
-                    Simples, você deve ir nas configurações do seu aplicativo de e-mail, procurar por restrições e
-                    bloquear qualquer tipo de e-mail suspeito.
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="third">Uma semana depois que eu cadastrei minha senha em um aplicativo perdi o acesso, o que
-                aconteceu?</label>
-            <input type="radio" id="third" name="duvida" checked>
-            <div>
-                <p>
-                    Primeiro, entre em contato com o suporte do aplicativo, e peça o bloqueio do acesso de outros
-                    aparelhos e mudar a senha. </p>
-            </div>
-        </li>
-        <li>
-            <label for="fourth">Caí num golpe do mercadão daqui da cidade, prometeram entregar prêmios para quem se
-                cadastrar e divulgar no link, e agora? </label>
-            <input type="radio" id="fourth" name="duvida" checked>
-            <div>
-                <p>
-                    Nunca repasse suas informações pessoais e sempre busque os sites oficiais pra tais promoções e
-                    divulgações, a princípio denuncie. </p>
-            </div>
-        </li>
-        <li>
-            <label for="fifth"> Tenho vários apps de “tigrinho” no meu celular, mas aparece tanto anúncio e trava muito,
-                como diminuir isso?</label>
-            <input type="radio" id="fifth" name="duvida" checked>
-            <div>
-                <p>
-                    Recomendamos que exclua a conta e delete todos esses aplicativos, principalmente se foram baixados
-                    em fontes duvidosas. </p>
-            </div>
-        </li>
-        <li>
-            <label for="sixth">O que posso fazer para que fique antenado(a) com a proteção de meus dados pessoais?
-            </label>
-            <input type="radio" id="sixth" name="duvida" checked>
-            <div>
-                <p>
-                    Deixe seu aparelho sempre atualizado nas ultimas versões para que a proteção e a segurança estejam
-                    funcionando perfeitamente. </p>
-            </div>
-        </li>
-    </ol>
+    <h1 class="duvida">AS DUVIDAS MAIS FREQUENTES:</h1>
+    
+    <div id="duvida">
+        <ul id="duvidas">
+            <li>
+                <label for="first">1. Me ligaram se passando por gerente do meu banco, mas nem tenho conta lá, fui
+                    hackeado(a)?<span>&#x3e;</span></label>
+                    <input type="radio" id="first" name="duvida">
+                    <div>
+                        <p class="content">
+                            Não. A primeira coisa a se fazer em uma situação como essa é bloquear qualquer número suspeito de
+                            sua lista telefônica e por precaução mude a senha da sua conta para não dar brecha à golpes.
+                        </p>
+                    </div>
+            </li>
+            <li>
+                <label for="second">2. Não param de mandar várias mensagens no meu e-mail, como faço pra cancelar elas?<span>&#x3e;</span></label>
+                <input type="radio" id="second" name="duvida">
+                <div>
+                    <p class="content">
+                        Simples, você deve ir nas configurações do seu aplicativo de e-mail, procurar por restrições e
+                        bloquear qualquer tipo de e-mail suspeito.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <label for="third">3. Uma semana depois que eu cadastrei minha senha em um aplicativo perdi o acesso, o que
+                aconteceu?<span>&#x3e;</span></label>
+                <input type="radio" id="third" name="duvida">
+                <div>
+                    <p class="content">
+                        Primeiro, entre em contato com o suporte do aplicativo, e peça o bloqueio do acesso de outros
+                        aparelhos e mudar a senha. </p>
+                </div>
+            </li>
+            <li>
+                <label for="fourth">4. Caí num golpe do mercadão daqui da cidade, prometeram entregar prêmios para quem se
+                    cadastrar e divulgar no link, e agora? <span>&#x3e;</span></label>
+                <input type="radio" id="fourth" name="duvida">
+                <div>
+                    <p class="content">
+                        Nunca repasse suas informações pessoais e sempre busque os sites oficiais pra tais promoções e
+                        divulgações, a princípio denuncie. </p>
+                </div>
+            </li>
+            <li>
+                <label for="fifth">5. Tenho vários apps de “tigrinho” no meu celular, mas aparece tanto anúncio e trava muito,
+                como diminuir isso?<span>&#x3e;</span></label>
+                <input type="radio" id="fifth" name="duvida">
+                <div>
+                    <p class="content">
+                        Recomendamos que exclua a conta e delete todos esses aplicativos, principalmente se foram baixados
+                        em fontes duvidosas. </p>
+                </div>
+            </li>
+            <li>
+                <label for="sixth">6. O que posso fazer para que fique antenado(a) com a proteção de meus dados pessoais? <span>&#x3e;</span></label>
+                <input type="radio" id="sixth" name="duvida">
+                <div>
+                    <p class="content">
+                        Deixe seu aparelho sempre atualizado nas ultimas versões para que a proteção e a segurança estejam
+                        funcionando perfeitamente. </p>
+                </div>
+            </li>
+        </ul>
+    </div>
     <br>
 
-    <form action="https://formsubmit.co/boradesbugar@gmail.com" method="POST">
+    <form id="contato" action="https://formsubmit.co/boradesbugar@gmail.com" method="POST">
         <h2>Entre em contato conosco, para mais informações:</h2>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem"></textarea><br><br>
+        <div class="campo-contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder=" ">
+        </div>
+        <div class="campo-contato">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder=" ">
+        </div>
+        <div class="campo-contato campo-mensagem">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder=" "></textarea>
+        </div>
         <button type="submit">Enviar</button>
     </form>
 
     <footer>
         <p>&copy; 2026 BoraDesbugar. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        document.querySelectorAll('#duvidas label').forEach((label) => {
+            label.addEventListener('click', () => {
+                const radio = document.getElementById(label.htmlFor);
+                if (radio.checked) {
+                    setTimeout(() => {
+                        radio.checked = false;
+                    }, 0);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
