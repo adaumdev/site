@@ -403,15 +403,16 @@ footer p {
 
 @media (max-width: 700px) {
     header {
-        position: sticky;
-        left: auto;
-        right: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         flex-wrap: wrap;
         justify-content: center;
         height: auto;
         min-height: 60px;
-        width: calc(100% + 8px);
-        margin-left: -4px;
+        width: 100%;
+        margin: 0;
         padding: 8px 12px;
         gap: 0 8px;
     }
@@ -435,7 +436,7 @@ footer p {
     }
 
     #inicio {
-        margin-top: 32px;
+        margin-top: 120px;
     }
 
     #inicio img {
