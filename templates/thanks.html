@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body class="agradecimento">
+    <header>
+        <img src="{{ url_for('static', filename='imagens/joaninha-de-jardim.png') }}" alt="Logo BoraDesbugar" class="logo">
+        <h1>BoraDesbugar</h1>
+        <nav aria-label="Navegação principal">
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Início</a></li>
+                <li><a href="{{ url_for('home') }}#objetivos">Objetivos</a></li>
+                <li><a href="{{ url_for('home') }}#duvida">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="agradecimento-conteudo">
+        <section class="agradecimento-painel" aria-labelledby="agradecimento-titulo">
+            <img src="{{ url_for('static', filename='imagens/heartpixel.png') }}" alt="Coração pixelado" class="agradecimento-imagem">
+            {% with mensagens = get_flashed_messages(with_categories=true) %}
+            {% set envio_ok = not mensagens or mensagens[0][0] == 'success' %}
+            <h2 id="agradecimento-titulo">{{ 'Muito obrigado!' if envio_ok else 'Não foi possível enviar' }}</h2>
+            {% if mensagens %}
+            {% for categoria, mensagem in mensagens %}
+            <p class="{{ categoria }}" role="status" aria-live="polite">{{ mensagem }}</p>
+            {% endfor %}
+            {% else %}
+            <p>A confirmação do envio da sua mensagem será exibida aqui.</p>
+            {% endif %}
+            {% endwith %}
+            <a class="botao-voltar" href="{{ url_for('home') }}">Voltar ao início</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BoraDesbugar. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
